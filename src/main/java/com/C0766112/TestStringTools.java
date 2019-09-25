@@ -14,7 +14,6 @@ public class TestStringTools {
         }
         return revString.toString();
     }
-    /*
     public int binaryToDecimal(String binary) {
         int decimal = 0;
         int binaryMultiplier = 1;
@@ -29,7 +28,7 @@ public class TestStringTools {
         }
         return decimal;
     }
-    public String initaials()
+    /*public String initaials()
     {
         String givenName=""
     }*/

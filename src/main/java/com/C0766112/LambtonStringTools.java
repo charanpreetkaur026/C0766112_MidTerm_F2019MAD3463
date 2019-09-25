@@ -10,13 +10,8 @@ public class LambtonStringTools
     {
         TestStringTools object = new TestStringTools();
         System.out.println(" Given String is: Lambton\n Reversed String is: " + object.reverse("Lambton"));
-       // String gString= "LAMBTON";
-        //String reverseString = get.reverseString;
-      //  reverseString r= String;
-        //System.out.println(" Reversed String is: " + reverseString);
+        System.out.println(" Given String is:  1001 \n Equilavent integer:" + object.binaryToDecimal("1001"));
 
-        //String binary = "1001";
-       // int decimal=
     }
 
 
