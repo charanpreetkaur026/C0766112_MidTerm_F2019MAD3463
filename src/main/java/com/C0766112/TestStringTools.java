@@ -28,8 +28,19 @@ public class TestStringTools {
         }
         return decimal;
     }
-    /*public String initaials()
+    public String initaials(String s)
     {
         String givenName=""
-    }*/
+    }
+    public String mostFrequent(String s)
+    {
+
+
+    }
+    public  String subString( String s)
+    {
+
+    }
+
+
 }
