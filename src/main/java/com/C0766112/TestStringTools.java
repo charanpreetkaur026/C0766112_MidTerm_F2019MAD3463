@@ -28,10 +28,32 @@ public class TestStringTools {
         }
         return decimal;
     }
-    public String initaials(String s)
-    {
-        String givenName=""
+    public String initaials(String s) {
+        System.out.println("Given String is:" + s);
+        int length = s.length();
+        s = s.trim();
+        String string1 = "";
+        System.out.print("Initials is: ");
+        for (int i = 0; i < length; i++) {
+            char ch = s.charAt(i);
+            if (ch != ' ') {
+                string1 = string1 + ch;
+            } else {
+                System.out.print(Character.toUpperCase(string1.charAt(0)) + ". ");
+                string1 = "";
+            }
+        }
+        String str2 = "";
+        for (int j = 0; j < string1.length(); j++) {
+            if (j == 0)
+                str2 = str2 + Character.toUpperCase(string1.charAt(0));
+            else
+                str2 = str2 + Character.toLowerCase(string1.charAt(j));
+        }
+        return str2;
+
     }
+    /*
     public String mostFrequent(String s)
     {
 
@@ -40,7 +62,7 @@ public class TestStringTools {
     public  String subString( String s)
     {
 
-    }
+    }*/
 
 
 }
