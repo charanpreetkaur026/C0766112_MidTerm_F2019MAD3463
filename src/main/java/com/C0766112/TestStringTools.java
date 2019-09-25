@@ -1,10 +1,10 @@
 package com.C0766112;
 
+import com.sun.org.apache.xerces.internal.impl.io.ASCIIReader;
+
 import java.util.Arrays;
 
 public class TestStringTools {
-
-    private String gString;
 
     public String reverse(String s)
     {
@@ -53,13 +53,30 @@ public class TestStringTools {
         return str2;
 
     }
-    /*
-    public String mostFrequent(String s)
+
+    public char mostFrequent(String s)
     {
 
+        int[] count;
+        count = new int[ASCII];
+        int len = s.length();
+        for (int i=0; i<len; i++)
+            count[s.charAt(i)]++;
+
+        int max = 1;
+        char result = ' ';
+
+        for (int i = 0; i < len; i++) {
+            if (max < count[s.charAt(i)])
+            {
+                max = count[s.charAt(i)];
+                result = s.charAt(i);
+            }
+        }
+        return result;
 
     }
-    public  String subString( String s)
+   /* public  String subString( String s)
     {
 
     }*/
